@@ -1,81 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bick By Brick Records</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
-</head>
-<header>
-    <H1>Welcome to B x B&trade; Records
-        <h2>Your #1 stop shop for any record from an artist who built their legacy "Brick By Brick"</h2>
-        <nav>
-            <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="OurStory.html">Our Story</a></li>
-            </ul>
-         </nav>
-      </header>
-</header>
-<body>
-   
+   <head>
+      <meta charset="UTF-8">
+      <title>Reach Out</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <!-- Heading and band photo -->
+      <h1>Reach Out</h1>
+      <img src="https://static-resources.zybooks.com/band.jpg" alt="Band at a concert"
+         class="center">
 
-    </H1>
-    <section class="featured">
-        <h3>Featured Albums:</h3>
-    </br>
-        <div class="featured-albums">
+      <!-- Section links -->
+      <nav class="nav">
+         <a href="#members">Members</a> &nbsp;
+         <a href="#concerts">Concerts</a> &nbsp;
+         <a href="#contact">Contact</a>
+      </nav>
 
-            <div class="album"> <a href="https://www.youtube.com/watch?v=aw-6XFlKQMY&list=PL1Tx_5tVnHqD03nHwP7yu0WTkrkLvtDER" target="_blank"><img src="MM...FOOD.jpg" alt="MM...FOOD! by MF DOOM" width="250px"></a>
-            
-            </div>
-            <div class="album"><a href="https://www.youtube.com/watch?v=ZiyjMwslGUI&list=PLvbqLDSdt1_Sehejg_8c1Xv6OBeUwMFb9" target="_blank"><img src="Dookie.jpg" alt="Dookie by GreenDay" width="250px"></a>
-            
-            </div>
-            <div class="album"><a href="https://www.youtube.com/watch?v=FBWbfkzYr7k" target="_blank"><img src="Masayoshi Takanaka.jpg" alt="All of me by Masayoshi Takanaka" width="250px"></a>
-            
-            </div>
-            <div class="album"><a href="https://www.youtube.com/watch?v=YdZwpyQ-tCs&list=PLkBf4YcIXVWJwsOen3nchOs8oRD6xqTcg" target="_blank"><img src="The ForeverStory.jpg" alt="The Forever Story by JID" width="250px"></a>
-            
-            </div>
-            <div class="album"><a href="https://www.youtube.com/watch?v=mMV9p7HJXZ0&list=PLY7w5lwDZFABKA9u5kRoODaOCf1QCoCxH" target="_blank"><img src="the carter 5.jpg" alt="The Carter 5 by Lil Wayne" width="250px"></a>
-            
-            </div>
-        </div>
-    </section>
-    
-    <section class="inventory">
-        <h3>Inventory:</h3>
-        <h4>
-        <table>
-            <thead>
-                <tr>
-                    <th>ARTIST:</th>
-                    <th>ALBUM:</th>
-                    <th>PRICE:
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>MF DOOM</td><td>MM...FOOD</td><td>$30</td></tr>
-                <tr><td>Green Day</td><td>Dookie</td><td>$25</td></tr>
-                <tr><td>Masayoshi Takanaka</td><td>All of Me</td><td>$10,000</td></tr>
-                <tr><td>The Forever Story</td><td>JID</td><td>$20</td></tr>
-                <tr><td>Lil Wayne</td><td>The Carter V</td><td>$12</td></tr>
-            </tbody>
-        </table>
-    </h4>
-    </section>
-    
-    <footer>
-        <p>Contact us by <em>MAIL IN ONLY</em> we do not take emails or phone calls. </p>
-       <p>Address: The Alley behind 123 N. West Ave, State College PA</p>
-    </footer>
+      <!-- List of band members -->
+      <section id="members">
+         <h2>Members</h2>
+         <img src="https://static-resources.zybooks.com/singer.jpg" alt="Singer" 
+            class="band-member">                          
+         <ul>
+            <li><strong>Braden Williamson</strong></li>
+            <li>Lead singer from Little Rock, Arkansas</li>
+            <li>Powerful vocals and creative lyrics</li>
+         </ul>
+         <img src="https://static-resources.zybooks.com/guitar1.jpg" alt="Lead guitarist" 
+            class="band-member">
+         <ul>
+            <li><strong>Ethan Andrews</strong></li>
+            <li>Lead guitarist from Norfolk, Virginia</li>
+            <li>Blistering soloist</li>
+         </ul>
+         <img src="https://static-resources.zybooks.com/guitar2.jpg" alt="Second guitar" 
+            class="band-member">                                
+         <ul>
+            <li><strong>Colton Davis</strong></li>
+            <li>Support guitarist from Denver, Colorado</li>
+            <li>The glue that keeps the band together</li>
+         </ul>
+      </section>
 
+      <!-- Table of upcoming concerts -->  
+      <section id="concerts">        
+         <h2>Concerts</h2>
+         <table>
+            <tr>
+               <th>Date</th>
+               <th>Venue</th>
+               <th>Location</th>
+            </tr>
+            <tr>
+               <td>Oct 10</td>
+               <td><a target="_blank" href="https://goo.gl/maps/gjoYjzuAuwr">Red Rocks Amphitheater</a></td>
+               <td>Morrison, CO</td>
+            </tr>
+            <tr>
+               <td>Oct 17</td>
+               <td><a target="_blank" href="https://goo.gl/maps/t8jHotrMHXR2">The Arkansas Music Pavilion</a></td>
+               <td>Rogers, AR</td>
+            </tr>
+            <tr>
+               <td>Oct 24</td>
+               <td><a target="_blank" href="https://goo.gl/maps/Svm8GARQJAJ2">The Criterion</a></td>
+               <td>Oklahoma City, OK</td>
+            </tr>
+            <tr>
+               <td>Oct 31</td>
+               <td><a target="_blank" href="https://goo.gl/maps/VkrEo1Hiwot">The Madrid Theatre</a></td>
+               <td>Kansas City, MO</td>
+            </tr>
+         </table>
+      </section>
+          
+      <!-- Contact information -->
+      <section id="contact">
+         <h2>Contact</h2>
 
+         <p>Reach out to us on 
+            <a href="https://twitter.com/ReachOut" target="_blank">Twitter</a> or at
+            <a href="mailto:reachout@email.com" target="_blank">reachout@email.com</a>
+         </p>
+      </section>
 
-</body>
+   </body>
 </html>
