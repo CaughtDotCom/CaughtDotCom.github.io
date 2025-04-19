@@ -1,0 +1,64 @@
+header{background-color: dodgerblue;}
+h1 {
+    background-color: dodgerblue;
+    color: lightgrey;
+    padding: 15px;
+    text-align: center;
+    font-family: tahoma;
+    border: 5px ridge darkgray;
+}
+h2 {
+    background-color: dodgerblue;
+    color: lightgrey;
+    padding: 15px;
+    text-align: center;
+    font-family: tahoma;
+    border: 5px ridge darkgray;
+}
+p{text-align: center;
+    font-family: tahoma;
+    color: dodgerblue;
+
+}
+.center {
+    text-align: center;
+}
+
+#Cycle {
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: lightgrey;
+    border: 5px ridge darkgray;
+    font-size: 22px;
+    padding: 15px 30px; 
+    font-family: tahoma
+}
+#jersey-image{border: 5px ridge darkgray;}
+#Cycle:hover {
+    background-color: lightgrey;
+    color: dodgerblue 
+}
+body{background-color: lightgrey;}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+ }
+ li{
+    font-family: tahoma;
+    color: dodgerblue;}
+
+ol{ font-family: tahoma;
+        color: dodgerblue;}
+
+label{font-family: tahoma;
+    color: dodgerblue;}
+    
+input{
+        padding: 10px 20px;
+        color: dodgerblue;
+        border: 5px ridge darkgray; 
+        font-family: tahoma}

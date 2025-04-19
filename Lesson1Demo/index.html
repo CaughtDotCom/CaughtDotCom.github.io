@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>For sale: 2012 Ducati Streetfighter</title>
+      <style>
+      h1 {
+         color: green;
+         background-color: lightgray;
+      }
+      p {
+         font-family: georgia;
+         margin-left: 10px;
+      }
+      strong {
+         background-color: lightgreen;
+         padding: 5px;
+      } 
+      </style>
+   </head>
+   <body>
+      <img src="https://resources.zybooks.com/WebProgramming/ducatiSmallv1.jpg" alt="Bike photo">
+      <h1 id="bike-heading">2012 Ducati Streetfighter 848 - $9000</h1>
+      <p>2012 Ducati Streetfighter 848, Low Miles, Lots of Upgrades. Full service history.
+      Call or text 555-4400.</p>
+      <p>year: <strong>2012</strong></p>
+      <p>make and model: <strong>Ducati Streetfighter 848</strong></p>
+      
+      <p>condition: <strong>excellent</strong></p>
+      <p>engine: <strong>848</strong></p>
+      <p>odometer: <strong>9500</strong></p>
+      <p>paint color: <strong>yellow</strong></p>
+      <p>Change heading color to: 
+        <button id="white-btn">White</button>
+        <button id="green-btn">Green</button>
+        <button id="red-btn">Red</button>
+     </p>
+
+     <script>
+        let whiteBtn = document.getElementById("white-btn");
+        whiteBtn.addEventListener("click", function() {
+           changeTextColor("white");
+        });
+        
+        let greenBtn = document.getElementById("green-btn");
+        greenBtn.addEventListener("click", function() {
+           changeTextColor("green");
+        });         
+
+        let redBtn = document.getElementById("red-btn");
+        redBtn.addEventListener("click", function() {
+           changeTextColor("red");
+        }); 
+
+        function changeTextColor(newColor) {
+           let heading = document.getElementById("bike-heading");
+           heading.style.color = newColor;
+        }
+     </script>
+   </body>
+</html>
+  

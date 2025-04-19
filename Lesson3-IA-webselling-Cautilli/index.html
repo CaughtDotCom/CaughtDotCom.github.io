@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>JERSEYS FOR CASH!</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div class="center">
+         <h1>Selling My Basketball Jersey Collection For Tuition</h1>
+         <img id="jersey-image" src="Jersey1.jpg" alt="Hoop jersey" width="300">
+         <h1>Use the button to cycle through each jersey:</h1>
+         <button id="Cycle" onclick="cycleImage()">CYCLE</button>
+         <p><strong>What?:</strong> This is a collection of my personal basketball jerseys I have accumulated over the years.</p>
+         <p><strong>Why?:</strong> Times are tough, and I need to get rid of my <strong>PRIZED</strong> collection of basketball jerseys. As much as it pains me, I have to pay tuition.</p>
+         <p><strong>How?:</strong> After cycling through the image, go to the list below to find out more about each item and their price! <strong> leave your name and email and I will contact you about the purchase.</strong></p>
+    
+      </div>
+      
+      <div class="container">
+        <div>
+           <h2>What Makes This Collection Special?</h2>
+           <ul>
+              <li>Totally rare and vintage jerseys</li>
+              <li>Hold emotional vlaue </li>
+              <li>Obscure items</li>
+              <li><em>kinda...</em>Authentic materials</li>
+           </ul>
+        </div>
+        <div>
+           <h2>Jerseys Available for Sale</h2>
+           <ol>
+              <li><a href="itemdetail1.html">2017 Russel Westbrook Jersey</a> </li>
+              <li><a href="itemdetail2.html">1977 Bill Walton Jersey</a> </li>
+              <li><a href="itemdetail3.html">2024 Joel Embiid Jersey</a> </li>
+              <li><a href="itemdetail4.html">2019 Jeremy Lin Jersey</a> </li>
+           </ol>
+        </div>
+     </div>
+     <p>This collection is <em>extremely</em> special to me, it includes jerseys from different eras and each hold real significance to me.
+        <br> I hope to one day be able to afford these jerseys again.
+        <br>  Basketball jersey collecting is a real passion of mine. I feel it can act as an archive of past players and uniforms as well as encapsualting a certain time period. 
+        <br> you can find more about hte history of collecting jersies here:<a href=" https://en.wikipedia.org/wiki/Basketball_uniform">Basketball uniform history wikipedia</a>
+    </p>
+    <script>
+         const images = [
+            "Jersey1.jpg",
+            "Jersey2.jfif",
+            "Jersey3.jfif",
+            "Jersey4.jfif"
+         ];
+
+         let currentIndex = 0;
+
+         function cycleImage() {
+            const imageElement = document.getElementById("jersey-image");
+            currentIndex = (currentIndex + 1) % images.length;
+            imageElement.src = images[currentIndex];
+         }
+      </script>
+   </body>
+</html>
+
+

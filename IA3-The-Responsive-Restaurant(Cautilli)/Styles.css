@@ -1,0 +1,147 @@
+.boldonse-regular {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-image: url(background2.avif);
+}
+
+header {
+    background-color: rgba(211, 211, 211, 0.75);
+    color: white;
+    text-align: center;
+}
+
+header img {
+    width: 600px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 55px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h2 {
+    font-size: 30px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+h3{
+    font-size: 30px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: white;
+}
+.menu-pics,
+.menu-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu-pics img,
+.menu-list img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+}
+.directions {
+    display: none;
+}
+p {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+.menu-list {
+    display: none;
+}
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    margin: 0 auto
+}
+footer {
+    background-color: rgba(211, 211, 211, 0.75);
+    color: white;
+    padding: 10px;
+text-align: center;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+/* tablet */
+@media (max-width: 1024px) {
+    .menu-pics {
+        display: none;
+    }
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 10px;
+    }
+    footer .address {
+        display: none;
+    }
+    .directions {
+         display: none;
+    }
+}
+
+/* phone */
+@media (max-width: 600px) {
+    header img {
+        width: 200px;
+        height: 100px;
+    }
+    .menu-list {
+        display: none;
+    }
+    .menu-gallery {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    iframe {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 300px;
+    }
+    h3{
+        display: none;
+    }
+    .directions {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        color: white;
+        margin-top: 10px;
+    }}

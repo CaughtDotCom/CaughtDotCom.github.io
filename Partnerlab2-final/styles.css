@@ -1,0 +1,44 @@
+  
+body {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0,
+      "XELA" 0,
+      "YELA" 0;
+    text-align: center;
+}
+h1 {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0,
+      "XELA" 0,
+      "YELA" 0;
+  text-align: center;
+}
+
+button {
+    background-color: rgb(249, 158, 77);
+    
+    color: white;
+    border: ridge;
+    border-color: grey;
+    border-width: 4px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: rgb(189, 92, 7);
+}
+
+ol  {
+ color: greenyellow; }

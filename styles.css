@@ -85,18 +85,22 @@ main {
     display: flex;
     gap: 20px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .project {
     display: block;
     flex-direction: column;
     align-items: center;
+    text-align: justify;
+    text-wrap: wrap;
 }
 
 .project img {
     width: 200px;
     height: auto;
     border: 2px solid black;
+    margin: 2px;
 }
 
 footer {
@@ -119,3 +123,7 @@ footer {
   #imgDiv:hover #imgHover{
     display:block;
   }
+  .break-line {
+    flex-basis: 100%;
+    height: 0;
+}

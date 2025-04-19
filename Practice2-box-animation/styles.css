@@ -1,0 +1,134 @@
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #018281;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+        "header header header"
+        "sidebar content1 content1"
+        "sidebar content2 content3"
+        "footer footer footer";
+    grid-template-columns:1fr 2fr 2fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 20px;
+    max-height: 1500px;
+    height: 100%;
+    width: 100%;
+    max-width: 1500px;
+   
+
+}
+
+.box {
+    padding: 30px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+@keyframes fadeBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+        filter: blur(5px)
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(10px);
+        filter: blur(2px)
+    }
+    100% {
+        transform: translateY(0);
+        filter: blur(0px);
+    }
+}
+
+    @keyframes popInEffect {
+        0% {
+            opacity: 0;
+            transform: scale(0.8) rotate(-10deg);
+            filter: brightness(0.6) blur(2px);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1) rotate(0deg);
+            filter: brightness(1) blur(0);
+        }
+    }
+
+
+.animation img, .animation2 img {
+    width: 250px;       
+    height: auto;      
+    max-width: 100%;   
+    display: block;    
+    justify-content: center;
+    text-align: center;
+    border: ridge;
+    border-color: grey;
+    margin: 10px;
+    align-items: center;
+}
+.header { grid-area: header;
+    border: ridge;
+    border-width: 5px;
+    border-color: grey;
+    background-color: lightgray
+
+ }
+.sidebar { grid-area: sidebar;
+    border: ridge;
+    border-width: 5px;
+    border-color: grey;
+    background-color: lightgray
+ }
+.content1 { grid-area: content1; 
+    border: ridge;
+    border-width: 5px;
+    border-color: grey;
+    background-color: lightgray
+ }
+
+ .content1 .animation {       
+    transform: scale(1.1);       
+    animation: fadeBounce 2s ease-in-out;      
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content2 { grid-area: content2; 
+    border: ridge;
+    border-width: 5px;
+    border-color: grey;
+    background-color: lightgray
+ }
+.content3 { grid-area: content3; 
+    border: ridge;
+    border-width: 5px;
+    border-color: grey;
+    background-color: lightgray;
+}
+.content2 .animation2,
+.content3 .animation2 {
+    animation: popInEffect 1.5s ease-in-out forwards;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    font-size: 1.3em;
+}
+.footer { grid-area: footer; 
+    border: ridge;
+    border-width: 5px;
+    border-color: grey;
+    background-color: lightgray
+}
