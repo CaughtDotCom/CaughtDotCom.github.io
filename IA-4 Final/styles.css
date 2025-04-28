@@ -1,0 +1,220 @@
+:root {
+    --header-color: rgb(186, 186, 186);
+    --font-color: #ffffff;
+    --bg-color: #236cea;
+    --head-color: #c7c7c7;
+    --font-color2: rgb(0, 0, 0)
+
+ }
+body{
+    background-color: var(--bg-color);
+}
+h1{
+    color: var(--font-color);
+text-align: center;
+font-size: 3rem;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.hero-section {
+    background-image: url('sixerback.jpg'); 
+    background-size: cover;
+      background-position: top;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+}
+
+section {
+    margin: auto;
+  }
+
+  h2 {
+    color: #ED174C;
+    border-bottom: 2px solid #ED174C;
+    padding-bottom: 5px;
+    font-size: 45px;
+  }
+  .logo {
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.5);
+    z-index: 10;
+  }
+
+.header {
+    overflow: hidden;
+    background-color: var(--header-color);
+    padding: 20px 10px;
+    border: 2px solid rgb(0, 0, 0);
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: wavy ;
+  }
+  
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .header a.active {
+    background-color: dodgerblue;
+    color: var(--font-color);
+  }
+  
+  .header-right {
+    float: right;
+  }
+  
+
+  p{
+    color: var(--font-color);
+    font-size: 20px;
+  }
+
+  .roster-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .player-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1 1 200px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .player-card.roster-list img{
+    display: flex;
+    justify-content: center;
+  }
+  
+#Cycle {
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: lightgrey;
+    border: 5px ridge darkgray;
+    font-size: 22px;
+    padding: 15px 30px; 
+    font-family: tahoma
+}
+#jersey-image{
+    border:  5px ridge darkgray;
+}
+#Cycle:hover {
+    background-color: lightgrey;
+    color: dodgerblue 
+}
+
+.center{
+text-align: center;
+}
+
+#NotablePlayers li {
+    list-style: none;
+    list-style-type:none;
+    font-size: 50px;
+    color: var(--font-color);
+    
+}
+table{
+width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background-color: #ffffff;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #c8102e;
+      color: white;
+    }
+    .legend-section {
+      margin-bottom: 40px;
+    }
+
+    footer{
+        text-align: center;
+        color: black;
+         padding: 20px; 
+         background-color: var(--head-color);
+          margin-top: 40px;
+          border: 2px solid rgb(0, 0, 0);
+    }
+    footer P{
+        color: black;
+    }
+
+
+
+
+    /*PHONE*/
+
+    @media only screen and (max-width: 600px) {
+        .header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .header-right {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        .header-right a {
+            text-align: left;
+            padding: 10px;
+            font-size: 16px;
+        }
+    
+        .hero-section {
+            padding: 30px 10px;
+        }
+    }
+    
+    /* Tablets*/
+    @media only screen and (min-width: 600px) and (max-width: 990px) {
+        .header {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    
+        .header-right a {
+            padding: 10px;
+            font-size: 17px;
+        }
+    }
+
+    @media only screen and (max-width: 990px) {
+        .hide-on-mobile {
+            display: none;
+        }
+    }
