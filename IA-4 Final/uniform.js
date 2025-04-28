@@ -41,28 +41,39 @@ const paragraphs = [
    
             let currentIndex = 0;
    
-            function cycleImage() {
-               const listElement = document.getElementById("jersey-list");
+function cycleImage() {
+    const listElement = document.getElementById("jersey-list");
     const paragraphElement = document.getElementById("jersey-description");
-               const imageElement = document.getElementById("jersey-image");
-               currentIndex = (currentIndex + 1) % images.length;
-               imageElement.src = images[currentIndex];
-               listElement.innerHTML = "";
-               lists[currentIndex].forEach(item => {
-                   const li = document.createElement("li");
-                   li.textContent = item;
-                   listElement.appendChild(li);
-               });
-               paragraphElement.textContent = paragraphs[currentIndex];
-           }
+   const imageElement = document.getElementById("jersey-image");
+   currentIndex = (currentIndex + 1) % images.length;
+   imageElement.src = images[currentIndex];
+   listElement.innerHTML = "";
+   lists[currentIndex].forEach(item => {
+          const li = document.createElement("li");
+          li.textContent = item;
+         listElement.appendChild(li);
+     });
+       paragraphElement.textContent = paragraphs[currentIndex];
+    }
 
-           document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('contactForm');
-            const successMessage = document.getElementById('successMessage');
+   
+   
+   
+    document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contactform");
+      const successMessage = document.getElementById("successMessage");
           
-            form.addEventListener('submit', function(event) {
-              event.preventDefault(); 
-              successMessage.classList.remove('d-none'); 
-              form.reset();
+       form.addEventListener("submit", function(event) {
+          event.preventDefault();
+           const name = document.getElementById("name").value;
+           const email = document.getElementById("email").value;
+           const message = document.getElementById("message").value;
+           
+           if (name && email && message) {
+                successMessage.style.display = "block"; 
+                form.reset(); 
+              } else {
+                alert("Please fill out all fields.");
+              }
             });
-          });
+          });           
