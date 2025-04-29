@@ -28,7 +28,7 @@ const lists = [
 ];
 
 const paragraphs = [
-   "  The team was formally known as the 'Syecuse Nationals' and played in New York, these uniforms were worn in the early 1950s and set the tone for future designs.",
+   "  The team was formally known as the 'Syracuse Nationals' and played in New York, these uniforms were worn in the early 1950s and set the tone for future designs.",
    "After moving out of New York, the franchise rebranced to the Philadelphia 76ers and played in Hershey, PA. With a Red, White, and Blue color scheme, this team embodied the new USA image.",
    "By the early 1970s, flashier uniform elements began to appear. The team experimented with stars along the sides and brighter color tones. It was a reflection of the NBA’s cultural shift toward a more dynamic and entertaining brand.",
    "The 1980-81 set is closely associated with the team’s championship run. They’re forever tied to legends like Julius Erving and the height of Sixers dominance.",

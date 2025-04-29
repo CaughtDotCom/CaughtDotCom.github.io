@@ -37,6 +37,7 @@ section {
     border-bottom: 2px solid #ED174C;
     padding-bottom: 5px;
     font-size: 45px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
   }
   .logo {
     transition: transform 0.3s ease;
